@@ -1,0 +1,16 @@
+---
+title: "api.key"
+author: "Erik Johnson"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This vignette illustrates how to import the google api key from a local dropbox source
+
+```{r, eval=FALSE}
+api.key <- api.keys::import.key(path.root = '~/Dropbox/pkg.data', str.api.name = 'google')
+```
